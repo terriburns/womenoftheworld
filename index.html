@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>A grouped pure CSS parallax demo by Keith Clark</title>
+    <title>The Periodical</title>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Francois+One|Squada+One|Oswald:400,700|Passion+One|Bevan' rel='stylesheet' type='text/css'>
+    <link rel ="stylesheet" type "text/css" href="css/parallax.css">
     <link rel ="stylesheet" type "text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/raindrops.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
 
@@ -14,20 +17,17 @@
     <div class="debug">
       <label><input type="checkbox">Debug</label>
     </div>
+    
     <div class="parallax">
       <!--empty tag for proper formatting-->
-      <div id="group2" class="parallax__group fixed">
+
+      <div class="group2 parallax__group">
         <div class="parallax__layer parallax__layer--base">
-          <div class="title"></div>
+          <div class="all-pages"></div>
         </div>
-        <div class="parallax__layer parallax__layer--back">
-          <!--<div class="title">Title</div>-->
-          <div id='explanation'>
-            <!-- Below put the image of the newspaper -->
-            <div>
-              Title
-            </div>
-            <!-- End the newspaper -->
+       <div id="page1" class="parallax__layer parallax__layer--back">
+          <div class="all-pages" id="explanation">
+              <img class="newspaper" width="800" height="800" src="img/newspaper.png"/>
           </div>
           <div id='weather-box'>
             <div id='the-rain'>
@@ -2022,76 +2022,57 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+        </div> 
       </div>
-      <div id="group3" class="parallax__group">
+
+  
+      <div class="group3 parallax__group">
         <div class="parallax__layer parallax__layer--fore">
-          <div class="title"></div>
+          <div class="all-pages"></div>
         </div>
         <div id="reached-top" class="reached-top parallax__layer parallax__layer--base">
           <img class="red-wave" src="assets/wave.png">
           <div class="red-wave">
             <div class="title">Pool of Blood</div>
           </div>
-        </div>
-      </div>
-     
       
       <!--empty tag for proper formatting-->
-      <div id="group2" class="parallax__group">
+      <div class="group2 parallax__group">
         <div class="parallax__layer parallax__layer--base">
-          <div class="title"></div>
         </div>
-        <div class="parallax__layer parallax__layer--back">
-          <div class="title">First fact, ethiopia</div>
+        <div id="page3" class="parallax__layer parallax__layer--back">
+          <div class="all-pages">First fact, ethiopia</div>
         </div>
       </div>
 
-      <div id="group3" class="parallax__group">
+      <div class="group3 parallax__group">
         <div class="parallax__layer parallax__layer--fore">
-          <div class="title"></div>
+          <div class="all-pages"></div>
         </div>
-        <div class="parallax__layer parallax__layer--base">
-          <div class="title">Raining tampons</div>
+        <div id="page4" class="parallax__layer parallax__layer--base">
+          <div class="all-pages tampons">Raining tampons</div>
         </div>
       </div>
       
       <!--empty tag for proper formatting-->
-      <div id="group2" class="parallax__group">
+      <div class="group2 parallax__group">
         <div class="parallax__layer parallax__layer--base">
-          <div class="title"></div>
+          <div class="all-pages"></div>
         </div>
         <div class="parallax__layer parallax__layer--back">
-          <div class="title">Second fact</div>
+          <div id="page5" class="all-pages">Second fact</div>
         </div>
       </div>
-      <div id="group3" class="parallax__group">
+      <div class="group3 parallax__group">
         <div class="parallax__layer parallax__layer--fore">
-          <div class="title"></div>
+          <div class="all-pages"></div>
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="title">*the end*</div>
+          <div id="page6" class="all-pages">*the end*</div>
         </div>
       </div>
       
     <script>
-      var debugInput = document.querySelector("input");
-      function updateDebugState() {
-      document.body.classList.toggle('debug-on', debugInput.checked);
-      }
-      debugInput.addEventListener("click", updateDebugState);
-      updateDebugState();
-    </script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-10812217-1', 'auto');
-      ga('send', 'pageview');
-    </script>
 
   </body>
 </html>

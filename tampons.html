@@ -1,20 +1,39 @@
-<<<<<<< HEAD
-$(document).ready(function() {
-  var distance = $('.parallax__group').offset().top,
-    $window = $(window);
+@@ -1,111 +0,0 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
 
-  $window.scroll(function() {
-    if ( $window.scrollTop() == distance ) {
-      console.log('hello');
-        // Your div has reached the top
-    }
-  });
-});
-=======
-var width = screen.width,
-    height = screen.height;
+body {
+  background: #000;
+}
 
-var n = 50,
+ellipse {
+  fill: #fff;
+}
+
+path {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+}
+
+.mid {
+  stroke-width: 12px;
+}
+
+.tail {
+  stroke-width: 2px;
+}
+
+</style>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script>
+
+var width = 960,
+    height = 500;
+
+var n = 100,
     m = 12,
     degrees = 180 / Math.PI;
 
@@ -89,4 +108,5 @@ function headTransform(d) {
 function tailPath(d) {
   return "M" + d.join("L");
 }
->>>>>>> f0016ff4e31e351551cb836fdc73b3a79ea76c89
+
+</script> 
