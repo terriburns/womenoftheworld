@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+$(document).ready(function() {
+  var distance = $('.parallax__group').offset().top,
+    $window = $(window);
+
+  $window.scroll(function() {
+    if ( $window.scrollTop() == distance ) {
+      console.log('hello');
+        // Your div has reached the top
+    }
+  });
+});
+=======
 var width = screen.width,
     height = screen.height;
 
@@ -76,3 +89,4 @@ function headTransform(d) {
 function tailPath(d) {
   return "M" + d.join("L");
 }
+>>>>>>> f0016ff4e31e351551cb836fdc73b3a79ea76c89

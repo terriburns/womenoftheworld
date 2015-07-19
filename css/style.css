@@ -1,45 +1,69 @@
-.all-pages {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.newspaper {
-  margin-top: 100px;
-}
 
-ellipse {
-  fill: #fff;
-}
-
-path {
-  fill: none;
-  stroke: #fff;
-  stroke-linecap: round;
-}
-
-.mid {
-  stroke-width: 12px;
-}
-
-.tail {
-  stroke-width: 2px;
-}
 
       /* assets 
-      --------------------------------------------- */      
-img.wave {
-  width: 100%;
-  height: auto;
-  padding-top: 30px;
-}
+      --------------------------------------------- */
+      
+      img.wave {
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+      }
 
-/* add-ons 
---------------------------------------------- */
-div.red-wave {
-  background-color: #991818;
-  height: 100%;
-  margin-top: -1em;
-}
+      /* add-ons 
+      --------------------------------------------- */
+      div.red-wave {
+        background-color: #991818;
+        height: 100%;
+        margin-top: -1em;
+      }
+
+      #reached-top .reached-top {
+        position: fixed;
+        top: 0;
+      }
+      .all-pages {
+         text-align: center;
+         position: absolute;
+         left: 50%;
+         top: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+       }
+
+      .newspaper {
+        margin-top: 100px;
+      }      
+
+      ellipse {
+        fill: #fff;
+      }      
+
+      path {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+      }      
+
+      .mid {
+        stroke-width: 12px;
+      }      
+
+      .tail {
+        stroke-width: 2px;
+      }      
+
+           /* assets 
+            --------------------------------------------- */      
+      img.wave {
+        width: 100%;
+        height: auto;
+        padding-top: 30px;
+      }      
+
+     /* add-ons 
+      --------------------------------------------- */
+      div.red-wave {
+        background-color: #991818;
+        height: 100%;
+        margin-top: -1em;
+      }
