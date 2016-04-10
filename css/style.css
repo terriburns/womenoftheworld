@@ -73,6 +73,19 @@
         padding-top: 10px;
 }
 
+@media (max-width: 768px) {
+	img.newspaper {
+		width: 150px;
+		height: 150px
+	}
+}
+
+@media (min-width: 768px) {
+	img.newspaper {
+		width: 800px;
+		height: 800px;
+	}
+}
 
 h1, h2 {
       font-family: 'Oswald', 'sans-serif';
